@@ -8,9 +8,7 @@ This project demonstrates a basic registration page implemented using Express.js
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
