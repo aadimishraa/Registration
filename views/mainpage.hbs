@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/mainpage.css">
+</head>
+<body>
+    <p class="head">Page for Registration</p>
+    <label for="" class="btn1">Create Account
+        <button class="b1">Sign Up</button>
+    </label>
+    <label for="" class="btn2">Already a User
+        <button class="b2">Sign in</button>
+    </label>
+    <script>
+        document.querySelector(".b1").addEventListener("click", function () {
+            window.location.href = "./signup.hbs";
+        });
+        document.querySelector(".b2").addEventListener("click", function () {
+                window.location.href = "./login.hbs";
+            });
+    </script>
+</body>
+</html>

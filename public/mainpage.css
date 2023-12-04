@@ -1,0 +1,49 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+.head{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.btn1{
+    font-size: 20px;
+    margin-left: 45%;
+    margin-right: 15px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.b1{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: white;
+}
+
+.b1:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.btn2{
+    font-size: 20px;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+.b2{
+    font-size: 15px;
+    margin-left: 23px;
+    border: none;
+    background-color: white;
+}
+
+.b2:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
