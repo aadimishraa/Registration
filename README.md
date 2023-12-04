@@ -24,3 +24,27 @@ This project demonstrates a basic registration page implemented using Express.js
 - Node.js (v14 or higher)
 - npm (Node Package Manager)
 - MongoDB (or any other preferred database)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/aadimishraa/Registration.git
+2. Install dependencies:
+   ```
+    npm install
+## Usage
+
+Start the server:
+```
+npm start
+```
+Open your web browser and navigate to http://localhost:3000 to access the registration page.
+
+## Configuration
+1. Set up your MongoDB connection string in the .env file.
+2. Customize other configurations in the .env file as needed.
+
+## Contributing
+Feel free to contribute to this project. Create a pull request with your changes, and they will be reviewed.
