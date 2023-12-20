@@ -1,6 +1,7 @@
 const User = require('../models/userSchema')
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+const session = require("express-session")
 
 const signup = async (req, res) => {
     try {
@@ -21,12 +22,12 @@ const signup = async (req, res) => {
             mobNo, 
             password: encPassword
         });
-
+        req.session.user = {email};
         const payload = {email: email};
         const secretKey = process.env.SECRET_KEY;
         const token = jwt.sign({...payload}, secretKey); 
         user.token = token;
-        return res.send("Signed Up Successfully");
+        return res.redirect("/homepage.hbs");
 
     }
     catch(error){
@@ -49,7 +50,9 @@ const login =  async (req, res) => {
         }
 
         const token = jwt.sign({email: loggedUser.email}, process.env.SECRET_KEY);
-        return res.send("Logged in Successfully");
+        req.session.user = {email}
+        console.log(req.session)
+        return res.redirect("/homepage.hbs");
     }
     catch(error){
         console.log(error);
